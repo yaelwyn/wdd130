@@ -50,9 +50,9 @@ nav, p, section, article {
     padding: 8px;
 }
 
-article {
+.hero article {
     position: absolute;
-    top: 20px;
+    top: 350px;
     left: 8%;
     width: 80%;
     padding: 20px;
