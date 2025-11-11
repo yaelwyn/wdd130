@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #1a535c;
+    --secondary-color: #4ecdc4;
+    --accent-color: #ff6b6b;
+    --paragraph-color: #555555;
+    --font-family-heading: "Roboto Slab", serif;
+    --font-family-base: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav a {
+    display: block;
+    padding: 20px;
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--paragraph-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--font-family-heading);
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent-color);
+    color: black;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+article {
+    position: absolute;
+    top: 350px;
+    left: 8%;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    background-color: #f4ecdc;
+}
+
+socialmedia a {
+    text-decoration: none;
+}
+
+/* Class Selector */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
