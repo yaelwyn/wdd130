@@ -2,6 +2,10 @@
     --primary-color: #1a535c;
     --accent-color: #ff6b6b;
     --paragraph-color: #555555;
+    --color-text-dark: black;
+    --color-border-light: #ccc;
+    --color-bg-light: #f4ecdc;
+    --color-bg-medium: #d1d1e1;
     --font-family-heading: "Roboto Slab", serif;
     --font-family-base: Arial, Helvetica, sans-serif;
 }
@@ -17,7 +21,7 @@ header {
     display: grid;
     grid-template-columns: 120px 1fr 5fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--color-border-light); 
 }
 
 .navigation {
@@ -78,7 +82,8 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent-color);
-    color: black;
+    /* Mise à jour de black */
+    color: var(--color-text-dark);
 }
 
 .history-content {
@@ -99,7 +104,8 @@ nav, p, section, article {
     width: 80%;
     padding: 20px;
     border: 1px solid var(--primary-color);
-    background-color: #f4ecdc;
+    /* Mise à jour de #f4ecdc */
+    background-color: var(--color-bg-light);
 }
 
 footer {
@@ -107,7 +113,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #d1d1e1;
+    /* Mise à jour de #d1d1e1 */
+    background-color: var(--color-bg-medium);
     font-size: 1.5em;
     margin-bottom: 50px;
 }
@@ -120,7 +127,6 @@ footer {
 .socialmedia a {
     text-decoration: none;
 }
-
 
 
 /* Class Selector */
