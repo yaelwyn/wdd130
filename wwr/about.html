@@ -9,24 +9,29 @@
         content="Whitewater rafting is a type of recreation that involves navigating a non-motorized watercraft down free flowing rivers.">
     <meta name="author" content="Yann Elwyn Ehounou">
     <link rel="stylesheet" href="styles/rafting.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="images/z-raftingcompas.jpg" alt="Logo" width="100">
+        <img src="images/z-raftingcompas.jpg" alt="Logo" width="150">
+        <div id="logo"></div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <div class="hero">
             <img src="images/rafting41_1024.jpg" alt="Rafting on the river">
             <h1>Raft Master</h1>
-            <article>
+            <article class="intro-content">
                 <img src="images/rafting59_600.jpg" alt="Satisfied customer">
                 <p>Our commitment rests on three pillars: absolute safety, impeccable quality, and an excellent
                     cost-benefit ratio.
@@ -37,31 +42,62 @@
                     and unparalleled.</p>
             </article>
         </div>
-        <section>
+        <section class="history-section">
             <h2>History</h2>
-            <p>1985: The Roots of Adventure
-                Founded by geologist Elias Vance under the name Pointe Zénith, our company was born from a simple
-                vision: to make true
-                exploration accessible, relying on rigor and respect for the great outdoors. The very first expedition,
-                a meticulous
-                crossing of a remote plateau, established our initial commitment to prudence and efficiency.
+            <div class="history-content">
+                <p>1985: The Roots of Adventure
+                    Founded by geologist Elias Vance under the name Pointe Zénith, our company was born from a simple
+                    vision: to make true
+                    exploration accessible, relying on rigor and respect for the great outdoors. The very first
+                    expedition,
+                    a meticulous
+                    crossing of a remote plateau, established our initial commitment to prudence and efficiency. 2010:
+                    The Anchor Protocol
+                    After years of refining our logistical techniques, we formalized our core values into the "Anchor
+                    Protocol." This
+                    document represents our dedication to Absolute Safety,</p>
 
-                2010: The Anchor Protocol
-                After years of refining our logistical techniques, we formalized our core values into the "Anchor
-                Protocol." This
-                document represents our dedication to Absolute Safety, the Impeccable Quality of our services, and an
-                Excellent
-                Cost-Benefit Ratio. This protocol became the guarantee of the turnkey experience we offer.
+                <div>
+                    <img src="images/rafting5.jpg" alt="rafting in a river" width="270">
+                </div>
 
-                Today: Exploration Reimagined
-                Now known as [Company Name], we perpetuate Vance's pioneering spirit. We transform complex challenges
-                into transparent
-                and secure adventures, making every journey an unforgettable and unparalleled moment. We are the
-                benchmark for those
-                seeking to realize their quest for exploration with total peace of mind.</p>
+                <p>the Impeccable Quality of our services, and
+                    an
+                    Excellent
+                    Cost-Benefit Ratio. This protocol became the guarantee of the turnkey experience we offer. Today:
+                    Exploration Reimagined
+                    Now known as [Company Name], we perpetuate Vance's pioneering spirit. We transform complex
+                    challenges
+                    into transparent
+                    and secure adventures, making every journey an unforgettable and unparalleled moment. We are the
+                    benchmark for those
+                    seeking to realize their quest for exploration with total peace of mind.</< /p>
+            </div>
         </section>
-        <section>
-            <h2>Adventure Awaits You!</h2>
+        <section class="adventure-gallery">
+            <h2>Adventure Awaits You</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="images/rafting6.jpg" alt="rafting" width="150">
+                    <figcaption>caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting7.jpg" alt="rafting" width="150">
+                    <figcaption>caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting8.jpg" alt="rafting" width="150">
+                    <figcaption>caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting9.jpg" alt="rafting" width="150">
+                    <figcaption>caption</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting10.jpg" alt="rafting" width="150">
+                    <figcaption>caption</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
