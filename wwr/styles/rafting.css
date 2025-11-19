@@ -82,7 +82,6 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent-color);
-    /* Mise à jour de black */
     color: var(--color-text-dark);
 }
 
@@ -104,7 +103,6 @@ nav, p, section, article {
     width: 80%;
     padding: 20px;
     border: 1px solid var(--primary-color);
-    /* Mise à jour de #f4ecdc */
     background-color: var(--color-bg-light);
 }
 
@@ -113,10 +111,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    /* Mise à jour de #d1d1e1 */
     background-color: var(--color-bg-medium);
     font-size: 1.5em;
     margin-bottom: 50px;
+}
+
+figcaption {
+    text-align: center;
 }
 
 .socialmedia {
