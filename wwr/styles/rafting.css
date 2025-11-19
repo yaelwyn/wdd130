@@ -47,14 +47,9 @@ header, main, footer {
 }
 
 .intro-content {
-    display: grid;
-    grid-template-columns: 1fr 3fr; 
-    align-items: center;
-}
-
-.intro-content {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
 .adventure-gallery {
