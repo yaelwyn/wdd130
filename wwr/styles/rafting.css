@@ -74,6 +74,11 @@ h1, h2 {
     text-align: center;
 }
 
+.different {
+    position: relative;
+    background-color: white;
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -293,3 +298,4 @@ button[type="submit"]:hover {
         border-top: 1px solid var(--color-border-light);
     }
 }
+
