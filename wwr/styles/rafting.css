@@ -259,10 +259,13 @@ button[type="submit"]:hover {
     border: 3px solid var(--primary-color); /* Bordure pour mettre en valeur l'avatar */
 }
 
-.employee-profile p {
-    font-family: var(--font-family-heading);
+/* Assure que la légende est bien stylisée et qu'elle remplace l'ancien style <p> */
+.employee-profile figcaption {
+    font-family: var(--font-family-heading); /* Utilisez la variable de police */
     color: var(--primary-color);
     font-weight: bold;
+    margin: 0; /* Assurez-vous qu'il n'y a pas de marges excessives */
+    padding: 5px;
 }
 
 /* Adaptation pour les petits écrans (responsive) */
