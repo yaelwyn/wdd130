@@ -153,7 +153,7 @@ figcaption {
 }
 
 /* ---------------------------------------------------------------------- */
-/* NOUVELLES RÈGLES POUR LA PAGE CONTACT */
+/* RÈGLES POUR LA PAGE CONTACT */
 /* ---------------------------------------------------------------------- */
 
 /* Style pour le bloc d'informations de l'entreprise (centrage) */
@@ -285,6 +285,25 @@ button[type="submit"]:hover {
     .map-container iframe {
         height: 300px;
     }
+    
+    /* Responsive adjustment for home grid */
+    .home-grid {
+        grid-template-columns: 1fr; /* Stack columns */
+    }
+
+    .home-hero h1 {
+        font-size: 2rem;
+    }
+
+    /* Responsive adjustment for trip cards */
+    .trip-card {
+        grid-template-columns: 1fr; /* Stack columns */
+        text-align: center;
+    }
+    .trip-card img {
+        margin: 0 auto 10px;
+        width: 80%;
+    }
 }
 
 /* Pour les écrans très petits */
@@ -302,3 +321,269 @@ button[type="submit"]:hover {
     }
 }
 
+
+/* --- Styles AJOUTÉS pour index.html (Home Page) --- */
+
+/* Call to Action Block on Hero Image */
+/* Call to Action Block on Hero Image */
+.hero-call-to-action {
+    position: absolute;
+    
+    /* NOUVEAUX REGLAGES DE TAILLE ET POSITION */
+    bottom: 40px;       /*Ancre en bas */
+    left: 40px;         /*Ancre à gauche */
+    transform: none;    /*Annule l'ancien centrage */
+    width: auto;        /* Permet à la largeur de se contracter */
+    max-width: 300px;   /* LIMITE LA LONGUEUR HORIZONTALE */
+    height: 200px;
+    margin: 175px 0 0 0;
+    padding: 15px;      /* Padding légèrement réduit */
+    text-align: left;   /* Aligne le texte à gauche */
+    
+    /* Styles esthétiques (inchangés) */
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--accent-color);
+}
+
+.hero-call-to-action p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.hero-call-to-action .button-link {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: var(--accent-color);
+    color: var(--color-text-dark);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-call-to-action .button-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* Home Grid Section - CSS Grid Layout */
+.home-grid-section {
+    padding: 20px 0;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr; /* Newsletter is wider than the two content blocks */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Common styling for the boxes */
+.purpose-box, .offerings-box, .newsletter-section {
+    padding: 20px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.purpose-box h3, .offerings-box h3, .newsletter-section h3 {
+    font-family: var(--font-family-heading);
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.purpose-box img, .offerings-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Newsletter Form Styles */
+.newsletter-section {
+    background-color: var(--color-bg-light);
+}
+
+.newsletter-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.newsletter-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button[type="submit"]:hover {
+    background-color: var(--accent-color);
+    color: var(--color-text-dark);
+}
+
+
+/* --- Styles AJOUTÉS pour trips.html (Trips Page) --- */
+
+/* Trips Hero Banner */
+.trips-hero img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.trips-title {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: white;
+    opacity: 1;
+}
+
+/* Trips Call to Action */
+.trips-call-to-action {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--color-bg-light);
+    margin: 20px 0;
+    border: 1px solid var(--color-border-light);
+}
+
+.trips-call-to-action h2 {
+    color: var(--accent-color);
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.trips-call-to-action p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: var(--accent-color);
+    color: var(--color-text-dark);
+}
+
+/* Detailed Trip Descriptions - 2 Column Layout */
+.trip-descriptions {
+    padding: 20px;
+}
+
+.trip-descriptions h2 {
+    margin-bottom: 20px;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Image column and content column */
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 8px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid var(--accent-color);
+}
+
+.trip-card h3 {
+    font-family: var(--font-family-heading);
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.trip-card ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+/* Trips Table */
+.trips-table-section {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.trips-table-section h2 {
+    margin-bottom: 15px;
+}
+
+.trips-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trips-table-section th,
+.trips-table-section td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.trips-table-section thead th {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-family-heading);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.trips-table-section tbody tr:nth-child(even) {
+    background-color: var(--color-bg-light);
+}
+
+.trips-table-section tbody tr:hover {
+    background-color: var(--color-bg-medium);
+}
